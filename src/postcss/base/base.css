@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* This defines what 1 rem is
+  100% is around 16 px and 62.5% is around 10 px
+  so 1 rem is around 10px */
+  font-size: 62.5%;
+
+   /* @include media(phone) {
+     font-size: 50%;
+   } */
+
+  @include media(tab-land) {
+    /* 1rem = 9px; */
+    font-size: 56.25%;
+  }
+  @include media(tab-port) {
+     /* 1 rem = 8px; */
+    font-size: 50%;
+  }
+  @include media(big-desktop) {
+    /* 1rem = 12px; */
+    font-size: 75%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+  @include media(tab-port) {
+    padding: 0;
+  }
+}
+/* ::selection {
+  background-color: $color-primary;
+  color: white;
+} */
