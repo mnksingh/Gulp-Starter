@@ -1,0 +1,39 @@
+//Abstracts
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+//Base
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+//Components
+@import "components/button";
+
+@import "layout/grid";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/navigation";
+
+//Pages
+@import "pages/home";
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: yellow;
+}
